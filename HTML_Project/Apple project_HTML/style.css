@@ -1,0 +1,754 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.navbar {
+    width: 100%;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.4);
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+    left: 0px;
+    top: 0px;
+    padding: 10px;
+    z-index: 1;
+}
+
+.my-content{
+    position:absolute;
+    padding: 20px;
+    margin-left: 30%;
+}
+.navbar ul li a {
+    text-decoration: none;
+}
+
+.navbar ul {
+    list-style: none;
+}
+
+.main-list li a {
+    color: rgb(137, 137, 137);
+    padding: 10px;
+    font-size: 10px;
+}
+
+.main-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.meg-menu {
+    display: none;
+    position: absolute;
+    left: 0px;
+    width: 100%;
+    background: rgb(0, 0, 0);
+    padding: 15px;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.meg-menu h3 {
+    font-size: 8px;
+    color: gray;
+}
+
+.heading-item a {
+    color:white;
+}
+
+.meg-list1 li a {
+    font-size: 15px;
+    font-weight: 400;
+    color: white;
+}
+
+.meg-list li a {
+    font-size: 10px;
+    font-weight: 300;
+    color:white;
+}
+
+.main-list li a:hover {
+    color: white;
+}
+
+.main-list li:hover>.meg-menu {
+    opacity: 1;
+    overflow: visible;
+    visibility: visible;
+    display: flex;
+    z-index: 1;
+}
+
+
+.mynav {
+    justify-content: center;
+    align-items: center;
+    color: red;
+}
+
+.meg-menu {
+    justify-content: center;
+}
+
+.menubar-icon {
+    display: none;
+}
+
+.search-icon {
+    display: flex;
+}
+
+.applelogo,
+.search-icon,
+.menubar-icon {
+    height: fit-content;
+    width: fit-content;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    text-decoration: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.menubar-heading a {
+    color: black;
+    font-size: 20px;
+}
+
+.menubar-heading {
+    display: none;
+}
+
+.menubar-icon {
+    display: none;
+}
+
+.menubar-iconitems li a {
+    font-size: 25px;
+    font-weight: bolder;
+    color: white;
+    justify-content: center;
+}
+
+#main-head-content {
+    text-decoration: none;
+    color: black;
+    display: flex;
+    justify-content: center;
+    font-size: 9px;
+    padding: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+
+    .nav-head {
+        display: none;
+    }
+
+    .menubar-icon {
+        display: flex;
+        padding-left: 200px;
+    }
+
+    .search-icon {
+        display: flex;
+    }
+
+    .applelogo {
+        padding-right: 200px;
+    }
+
+    .menubar-icon:hover~.menubar-iconitems {
+        display: flex;
+        align-items: center;
+        font-size: 30px;
+        font-weight: bolder;
+    }
+}
+
+.card,
+.card1 {
+    background-color: rgb(249, 246, 246);
+    justify-content: center;
+    padding: 10px;
+}
+
+.btn {
+    border: 2px solid rgb(62, 57, 215);
+    color: black;
+    padding: 4px 10px;
+    cursor: pointer;
+    justify-content: center;
+    border-radius: 15px;
+    align-items: center;
+}
+
+.learn-btn {
+    display: flex;
+    justify-content: center;
+}
+
+.shopbtn {
+    display: flex;
+    justify-content: center;
+}
+
+.btn:hover {
+    background-color: rgb(62, 57, 215);
+    color: white;
+}
+
+.this {
+    display: flex;
+    justify-content: center;
+}
+
+.card1 p {
+    display: flex;
+    justify-content: center;
+}
+
+.learn-btn .btn {
+    background-color: rgb(62, 57, 215);
+    color: white;
+}
+
+.learn-btn,
+.buy-btn {
+    padding: 5px;
+}
+
+.mainbtn {
+    display: flex;
+    justify-content: center;
+}
+
+.card2 {
+    background-color: rgb(0, 0, 0);
+    justify-content: center;
+    padding: 10px;
+}
+
+.iphonehead h1,
+.this h1 {
+    color: black;
+    display: flex;
+    font-size: 35px;
+    justify-content: center;
+}
+
+.card2 a p,
+.this p {
+    text-decoration: none;
+    color: black;
+    display: flex;
+    justify-content: center;
+}
+
+#lean {
+    color: black;
+    font-size: 17.5px;
+}
+
+.card1 a {
+    text-decoration: none;
+}
+
+.iphonehead a h1 {
+    color: white;
+    font-size: 35px;
+
+}
+
+.iphonehead a p {
+    color: white;
+    font-size: 17.5px;
+
+}
+
+.iphon {
+    background-color: black;
+    color: rgb(62, 57, 215);
+}
+
+.iphon:hover {
+    color: white;
+}
+
+.cards-2{
+    display: flex;
+    justify-content: space-between;
+}
+
+.card3{
+    background-color: black;
+    justify-content: center;
+}
+.appleai a h1{
+    color:white;
+    font-size: 35;
+    font-weight: bolder;
+    
+}
+
+.appleai a p{
+    display: flex;
+    color:white;
+    font-size: 17.5px;
+}
+
+.aiapple{
+    padding: 5px;
+}
+
+.mainbtn button:hover{
+    background-color:blue;
+}
+.ipad{
+    color: white;
+}
+
+.card4{
+    background-color: rgb(249, 246, 246);
+    }
+.cards-2{
+    background-color: rgb(219, 219, 219);
+    justify-content:space-around;
+}
+.cards-3{
+    align-items: center;
+}
+
+.card3{
+    padding: 40px;
+
+}
+.card4{
+    padding-bottom: 78px;
+    background-color: rgb(246, 247, 249);
+
+}
+.card8{
+    padding-bottom: 50px;
+}
+
+
+.card6{
+
+    padding-bottom: 12px;
+    margin-top: 10px;
+    background-color: rgb(246, 247, 249);
+
+}
+.card5 ,.card8{
+    
+    margin-top: 10px;
+    background-color: rgb(246, 247, 249);
+    justify-content: center;
+}
+
+.applelogo{
+    display: inline-block;
+    padding-left: 2px;
+
+}
+.applelogowhite{
+    display: inline-block;
+    padding-left: 2px;
+
+}
+.textbox h1{
+    color: black;
+    margin-left: 42%;
+}
+
+.textbox p{
+    color: black;
+    margin-left: 37%;
+}
+
+.series{
+    margin-left: 26%;
+    color: red;
+    font-weight: bolder;
+}
+.seriesw{
+    color: white;
+    margin-left: 39%;
+}
+
+.seriesw p{
+    color: white;
+}
+
+.card7{
+    margin-top: 10px ;
+    background-color: rgba(246, 247, 249);
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+    background-color: white;
+  }
+  .card6{
+    background-color:rgb(0, 0, 0);
+  }
+  
+  /* Create four equal columns that sits next to each other */
+  .column {
+    flex: 50%;
+    max-width: 50%;
+    padding: 0 4px;
+  }
+  
+  .column img {
+    margin-top: 8px;
+    vertical-align: middle;
+  }
+  
+  /* Responsive layout - makes a two column-layout instead of four columns */
+  @media (max-width: 800px) {
+    .column {
+      flex: 50%;
+      max-width: 50%;
+    }
+
+    .search-icon {
+        display: flex;
+    }
+
+    .applelogo {
+        margin-left: 44px;
+    }
+
+    .menubar-icon:hover~.menubar-iconitems {
+        display: flex;
+        align-items: center;
+        font-size: 30px;
+        font-weight: bolder;
+    }
+
+    .menubar-icon {
+        display: flex;
+        padding-left: 200px;
+    }
+
+    .search-icon {
+        display: flex;
+    }
+
+    .applelogo {
+        padding-right: 200px;
+    }
+
+    .menubar-icon:hover~.menubar-iconitems {
+        display: flex;
+        align-items: center;
+        font-size: 30px;
+        font-weight: bolder;
+    }
+  }
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media (max-width: 600px) {
+    .column {
+      flex: 100%;
+      max-width: 100%;
+    }
+
+    
+    .search-icon {
+        display: flex;
+    }
+
+    .applelogo {
+        margin-left: 44px;
+    }
+
+    .menubar-icon:hover~.menubar-iconitems {
+        display: flex;
+        align-items: center;
+        font-size: 30px;
+        font-weight: bolder;
+    }
+
+    .menubar-icon {
+        display: flex;
+        margin-right: 5px;
+        padding-right: 20px;
+        padding-left: 90px;
+    }
+
+    .search-icon {
+        display: flex;
+    }
+
+    .applelogo {
+        padding-right: 200px;
+    }
+
+    
+    .menubar-icon:hover~.menubar-iconitems {
+        display: flex;
+        align-items: center;
+        font-size: 30px;
+        font-weight: bolder;
+    }
+
+  }
+
+
+  
+.container{
+    padding-top:1rem;
+  
+}
+
+.slider-wrapper{
+    
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+.slider-nav{
+    display: flex;
+    column-gap: 1rem;
+    position: absolute;
+    bottom: -2.25rem;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index:1;
+}
+
+
+.slider-nav a {
+    width: 0.5rem;
+    height: 0.5rem;
+    font-size: 10px;
+    border-radius: 50%;
+    background-color: #060606;
+    opacity: 0.75;
+    transition: opacity 250ms ease, transform 250ms ease; /* Animation added */
+    animation: pulse 2s infinite; /* Applies the pulse effect */
+}
+
+.slider-nav a:hover {
+    opacity: 1;
+    transform: scale(1.2); /* Enlarges the dot on hover */
+}
+
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+        opacity: 0.75;
+    }
+    50% {
+        transform: scale(1.1);
+        opacity: 1;
+    }
+}
+
+
+.slider {
+    display: flex;
+    
+    aspect-ratio: 16 / 7;
+    overflow-x: hidden; /* Change from auto to hidden for better control */
+    scroll-snap-type: x mandatory;
+    box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25);
+    border-radius: 0.5rem;
+    position: relative;
+    transition: transform 1s ease-in-out; /* Smooth transition between slides */
+}
+
+.slider img {
+    scroll-snap-align: start;
+    object-fit: cover;
+}
+
+
+.in-slide {
+    height: 250px;
+    margin: auto;
+    position: relative;
+    width: 100%;
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+}
+
+.slide-track {
+    display: flex;
+    width: calc(350px * 12); 
+    animation: scroll 40s linear infinite;
+}
+
+.inslide {
+    height: 300px;
+    width: 350px;
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    perspective: 100px;
+    box-sizing: border-box;
+}
+
+.inslide img {
+    width: 100%;
+    transition: transform 1s;
+}
+
+.inslide img:hover {
+    transform: translateZ(20px);
+}
+
+/* .in-slide::before,
+.in-slide::after {
+    background: linear-gradient(to right, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
+    height: 100%;
+    position: absolute;
+    width: 15%;
+    z-index: 2;
+    content: "";
+}
+
+.in-slide::before {
+    left: 0;
+    top: 0;
+}
+
+.in-slide::after {
+    right: 0;
+    top: 0;
+} */
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(calc(-350px * 6));
+    }
+}
+
+footer{
+    background-color:rgb(246, 247, 249);
+    justify-content: center;
+    margin:0 200px;
+
+}
+
+.footer-content{
+    padding: 10px;
+}
+
+a{
+ text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+
+.footer-content a p{
+    color: #060606;
+    padding: 5px;
+    font-size: 10px;
+    font-weight: 200;
+    cursor: pointer;
+}
+
+.table-foot {
+    display: flex;
+    padding: 5px;
+    
+}
+
+.foter-tab li a{
+    color: #060606;
+    font-size: 9px;
+    justify-content: center;
+    font-weight: 300;
+    padding-left: 15px;
+
+} 
+
+.foter-tab li a h4{
+    color: #060606;
+    font-size: 11px;
+    justify-content: center;
+    font-weight: 400;
+    padding-left: 15px;
+} 
+
+.footer-para {
+    justify-content: center;
+}
+
+.ft{
+    background-color:rgb(246, 247, 249);
+}
+
+.more{
+    padding-top: 5px;
+    margin-left: 10px;
+}
+.more p{
+    color: #060606;
+    font-size: 12px;
+}
+
+.blue{
+    color: blue;
+    text-decoration: underline;
+    cursor: pointer;
+}
+.copr{
+    font-size: 12px;
+    padding: 5px;
+    display: flex;
+    color: #060606;
+}
+
+.unit{
+    padding-left: 20%;
+}
+.copr-lik {
+    display: flex;
+}
+.copr-lik a {
+    text-decoration: none;
+    color: #060606;
+
+}
+
+.copr-lik a:hover{
+    text-decoration: underline;
+}
+
+.appleevn video {
+    display: flex;
+    padding-top:0;
+    width: 100%;
+    cursor: pointer;
+}
+
+
